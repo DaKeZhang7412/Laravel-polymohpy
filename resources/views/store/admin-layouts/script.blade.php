@@ -1,4 +1,4 @@
-{!! Html::script('js/jquery.js') !!}
+{!! Html::script('js/jquery.min.js') !!}
 {!! Html::script('js/excanvas.min.js') !!}
 {!! Html::script('js/jquery.min.js') !!}
 {!! Html::script('js/jquery.ui.custom.js') !!}
