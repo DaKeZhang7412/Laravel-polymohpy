@@ -15,6 +15,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/EdmondAdmin', function(){
-    return view('layouts.master');
+Route::get('/store', function(){
+    return view('store.admin-layouts.master');
 });
+
