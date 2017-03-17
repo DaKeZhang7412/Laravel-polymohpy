@@ -1,7 +1,7 @@
 <head>
-    <title>Edmond Great Admin</title>
-    <meta charset="UTF-8') !!}
-    <meta name="viewport" content="width=device-width, initial-scale=1.0') !!}
+    <title>Edmond Admin</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     {!! Html::style('css/bootstrap.min.css') !!}
     {!! Html::style('css/bootstrap-responsive.min.css') !!}
     {!! Html::style('css/fullcalendar.css') !!}
