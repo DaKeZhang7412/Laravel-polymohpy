@@ -9,7 +9,6 @@ use Illuminate\Database\Eloquent\Relations\Relation;
 
 
 Relation::morphMap([
-    'manager'=>'Manager',
     'employee'=>'Employee',
     'customer'=>'Customer',
 ]);

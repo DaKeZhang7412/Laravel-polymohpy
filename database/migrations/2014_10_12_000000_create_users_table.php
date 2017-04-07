@@ -21,8 +21,9 @@ class CreateUsersTable extends Migration
             $table->string('phone')->nullable();
             $table->rememberToken();
             $table->timestamps();
-            $table->string('userable_type');
-            $table->string('userable_id');
+            $table->morphs('userable');
+//            $table->string('userable_type');
+//            $table->integer('userable_id');
         });
     }
 
