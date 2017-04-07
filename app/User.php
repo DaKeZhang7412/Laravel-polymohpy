@@ -4,6 +4,15 @@ namespace restaurant;
 
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Foundation\Auth\User as Authenticatable;
+use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\Relation;
+
+
+Relation::morphMap([
+    'manager'=>'Manager',
+    'employee'=>'Employee',
+    'customer'=>'Customer',
+]);
 
 class User extends Authenticatable
 {
@@ -26,4 +35,8 @@ class User extends Authenticatable
     protected $hidden = [
         'password', 'remember_token',
     ];
+
+    protected function userable() {
+        return $this->morphTo();
+    }
 }
