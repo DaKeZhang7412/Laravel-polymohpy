@@ -15,8 +15,9 @@ class CreatEmployeeTable extends Migration
     {
         Schema::create('employee', function(Blueprint $table) {
             $table->increments('employee_id');
-            $table->float('pay_rate', 8,2);
+            $table->decimal('pay_rate', 8,2);
             $table->integer('address_id');
+            $table->char('gender',1);
             $table->timestamps();
             $table->morphs('employeeable');
         });

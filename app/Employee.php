@@ -18,7 +18,7 @@ class Employee extends Model
     // can make order, assign order to self.
     public function users()
     {
-        return $this->morphMany('User', 'userable');
+        return $this->morphOne('User', 'userable');
     }
 
     protected function employeeable() {

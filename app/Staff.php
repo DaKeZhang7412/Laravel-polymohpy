@@ -8,6 +8,6 @@ class Staff extends Model
 {
     public function employees()
     {
-        return $this->morphMany('Employee', 'employeeable');
+        return $this->morphOne('Employee', 'employeeable');
     }
 }
